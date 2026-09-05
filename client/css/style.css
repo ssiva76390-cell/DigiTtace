@@ -1,0 +1,234 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== RESET ===== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0B1120;
+    color:#ffffff;
+}
+
+/* ===== NAVBAR ===== */
+
+.navbar{
+
+    width:100%;
+    height:80px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 60px;
+
+    background:#111827;
+
+    position:sticky;
+    top:0;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#38BDF8;
+
+}
+
+nav ul{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+
+    color:white;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#38BDF8;
+
+}
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.login-btn,
+
+.register-btn{
+
+    text-decoration:none;
+
+    padding:10px 22px;
+
+    border-radius:8px;
+
+    font-weight:600;
+
+}
+
+.login-btn{
+
+    border:2px solid #38BDF8;
+
+    color:#38BDF8;
+
+}
+
+.login-btn:hover{
+
+    background:#38BDF8;
+
+    color:black;
+
+}
+
+.register-btn{
+
+    background:#38BDF8;
+
+    color:black;
+
+}
+
+.register-btn:hover{
+
+    background:#0EA5E9;
+
+}
+
+/* ===== HERO ===== */
+
+.hero{
+
+    height:calc(100vh - 80px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.hero h1{
+
+    font-size:58px;
+
+    line-height:1.3;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    width:700px;
+
+    max-width:90%;
+
+    color:#CBD5E1;
+
+    font-size:18px;
+
+    line-height:30px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.start-btn,
+
+.learn-btn{
+
+    padding:14px 32px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.start-btn{
+
+    background:#38BDF8;
+
+    color:black;
+
+}
+
+.start-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.learn-btn{
+
+    background:transparent;
+
+    color:white;
+
+    border:2px solid white;
+
+}
+
+.learn-btn:hover{
+
+    background:white;
+
+    color:black;
+
+}
