@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Privacy Report</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>DigiTrace</h2>
+
+<ul>
+
+<li onclick="window.location.href='dashboard.html'">🏠 Dashboard</li>
+
+<li onclick="window.location.href='profile.html'">👤 Profile</li>
+
+<li onclick="window.location.href='username.html'">🔍 Username Analysis</li>
+
+<li onclick="window.location.href='email.html'">📧 Email Exposure</li>
+
+<li onclick="window.location.href='reverse-image.html'">🖼 Reverse Image</li>
+
+<li class="active">📊 Privacy Report</li>
+
+<li onclick="window.location.href='history.html'">📜 Search History</li>
+
+<li onclick="window.location.href='settings.html'">⚙ Settings</li>
+
+<li id="logout">🚪 Logout</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>📊 Privacy Report</h1>
+
+<div class="card">
+
+<button id="reportBtn">
+
+Generate Privacy Report
+
+</button>
+
+<br><br>
+
+<div class="privacy-score">
+
+<h2>🛡 Privacy Score</h2>
+
+<div id="scoreCircle" class="score-circle">
+
+<span id="privacyScore">0%</span>
+
+</div>
+
+<h3 id="riskLevel">
+
+Calculating...
+
+</h3>
+
+</div>
+
+<div id="reportResult"></div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

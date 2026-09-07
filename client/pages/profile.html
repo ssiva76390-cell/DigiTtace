@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>DigiTrace Profile</title>
+
+<link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <h1>👤 My Profile</h1>
+
+        <img
+            id="profilePhoto"
+            src="../images/default-user.png"
+            alt="Profile">
+
+        <h2 id="fullName">Loading...</h2>
+
+        <p>
+            <b>Username:</b>
+            <span id="username"></span>
+        </p>
+
+        <p>
+            <b>Email:</b>
+            <span id="email"></span>
+        </p>
+
+        <p>
+            <b>Phone:</b>
+            <span id="phone"></span>
+        </p>
+
+        <p>
+    <b>📅 Account Created:</b>
+    <span id="createdAt"></span>
+</p>
+
+<p>
+    <b>🕒 Last Login:</b>
+    <span id="lastLogin"></span>
+</p>
+
+    </div>
+
+    <div class="stats-card">
+
+        <h2>Statistics</h2>
+
+        <div class="stat">
+
+            <span>Total Searches</span>
+
+            <strong id="totalSearches">0</strong>
+
+        </div>
+
+        <div class="stat">
+
+            <span>Username Searches</span>
+
+            <strong id="usernameSearches">0</strong>
+
+        </div>
+
+        <div class="stat">
+
+            <span>Email Searches</span>
+
+            <strong id="emailSearches">0</strong>
+
+        </div>
+
+        <div class="stat">
+
+            <span>Image Searches</span>
+
+            <strong id="imageSearches">0</strong>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+
+        <button id="editBtn">
+            Edit Profile
+        </button>
+
+        <button id="passwordBtn">
+            Change Password
+        </button>
+
+        <button onclick="window.location.href='dashboard.html'">
+            Dashboard
+        </button>
+
+    </div>
+
+</div>
+
+<script src="../js/profile.js"></script>
+
+</body>
+</html>

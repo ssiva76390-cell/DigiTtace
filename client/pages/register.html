@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiTrace Register</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+<div class="register-container">
+
+    <div class="register-left">
+
+        <h1>DigiTrace</h1>
+
+        <h2>Create Your Account</h2>
+
+        <p>
+            Join DigiTrace and analyze your digital footprint using responsible OSINT-based privacy assessment.
+        </p>
+
+    </div>
+
+    <div class="register-right">
+
+        <form class="register-form"
+              id="registerForm"
+              enctype="multipart/form-data">
+
+            <h2>Register</h2>
+
+            <input type="text"
+                   name="full_name"
+                   placeholder="Full Name"
+                   required>
+
+            <input type="text"
+                   name="username"
+                   placeholder="Username"
+                   required>
+
+            <input type="email"
+       name="email"
+       placeholder="Email Address"
+                   required>
+
+            <input type="text"
+                   name="phone"
+                   placeholder="Phone Number"
+                   required>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Password"
+                   required>
+
+            <input type="password"
+                   name="confirm_password"
+                   placeholder="Confirm Password"
+                   required>
+
+            <input type="file"
+                   id="profile_photo"
+                   name="profile_photo"
+                   accept="image/*">
+
+
+            <button type="submit">Create Account</button>
+
+            <p>
+                Already have an account?
+                <a href="login.html">Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="../js/main.js"></script>
+
+</body>
+
+</html>

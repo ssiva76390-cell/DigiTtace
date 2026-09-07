@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Reverse Image Analysis</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>DigiTrace</h2>
+
+<ul>
+
+<li onclick="window.location.href='dashboard.html'">🏠 Dashboard</li>
+
+<li onclick="window.location.href='profile.html'">👤 Profile</li>
+
+<li onclick="window.location.href='username.html'">🔍 Username Analysis</li>
+
+<li onclick="window.location.href='email.html'">📧 Email Exposure</li>
+
+<li class="active">🖼 Reverse Image</li>
+
+<li onclick="window.location.href='privacy-report.html'">📊 Privacy Report</li>
+
+<li onclick="window.location.href='history.html'">📜 Search History</li>
+
+<li onclick="window.location.href='settings.html'">⚙ Settings</li>
+
+<li id="logout">🚪 Logout</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<h1>🖼 Reverse Image Analysis</h1>
+
+<div class="card">
+
+<input
+type="file"
+id="imageInput"
+accept="image/*">
+
+<button id="imageBtn">
+Analyze Image
+</button>
+
+<div id="imagePreview"></div>
+
+<div id="imageResult"></div>
+
+</div>
+
+</div>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

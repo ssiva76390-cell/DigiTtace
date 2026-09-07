@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DigiTrace Dashboard</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>DigiTrace</h2>
+
+    <ul>
+
+        <li onclick="window.location.href='dashboard.html'">
+            🏠 Dashboard</li>
+
+        <li onclick="window.location.href='profile.html'">
+            👤 Profile
+        </li>
+
+        <li onclick="window.location.href='username.html'">
+            🔍 Username Analysis
+        </li>
+
+        <li onclick="window.location.href='email.html'">
+            📧 Email Exposure
+        </li>
+
+        <li onclick="window.location.href='reverse-image.html'">
+            🖼 Reverse Image
+        </li>
+
+        <li onclick="window.location.href='privacy-report.html'">
+            📊 Privacy Report
+        </li>
+
+        <li onclick="window.location.href='history.html'">
+            📜 Search History
+        </li>
+
+        <li onclick="window.location.href='settings.html'">
+    ⚙ Settings
+</li>
+
+        <li id="logout">🚪 Logout</li>
+
+    </ul>
+
+</div>
+
+
+<div class="main">
+
+    <div class="topbar">
+
+        <h1>Welcome to DigiTrace</h1>
+
+        <div class="user"
+     onclick="window.location.href='profile.html'"
+     style="cursor:pointer;">
+
+            <img
+                src="../images/default-user.png"
+                alt="Profile">
+
+            <span id="userName">
+                User
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="stats">
+
+    <div class="stat-card">
+
+        <h3>Total Users</h3>
+
+        <h1 id="totalUsers">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>Total Searches</h3>
+
+        <h1 id="totalSearches">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>Username Searches</h3>
+
+        <h1 id="usernameSearches">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>Email Searches</h3>
+
+        <h1 id="emailSearches">0</h1>
+
+    </div>
+
+    <div class="stat-card">
+
+        <h3>Image Searches</h3>
+
+        <h1 id="imageSearches">0</h1>
+
+    </div>
+
+</div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+    <h2>🔍 Username Analysis</h2>
+
+    <input
+        type="text"
+        id="usernameInput"
+        placeholder="Enter Username">
+
+    <button id="analyzeBtn">
+        Analyze
+    </button>
+
+    <div id="usernameResult"></div>
+
+</div>
+
+        <div class="card">
+
+    <h2>📧 Email Exposure</h2>
+
+    <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter Email Address">
+
+    <button id="emailCheckBtn">
+        Check Email
+    </button>
+
+    <div id="emailResult"></div>
+
+</div>
+
+       <div class="card">
+
+    <h2>🖼 Reverse Image Search</h2>
+
+    <input
+        type="file"
+        id="imageInput"
+        accept="image/*">
+
+    <button id="imageBtn">
+        Analyze Image
+    </button>
+
+    <div id="imagePreview"></div>
+
+    <div id="imageResult"></div>
+
+</div>
+
+        <div class="card">
+
+    <h2>📊 Privacy Report</h2>
+
+    <button id="reportBtn">
+        Generate Report
+    </button>
+
+    <div class="privacy-score">
+
+    <h2>🛡 Privacy Score</h2>
+
+    <div id="scoreCircle" class="score-circle">
+
+        <span id="privacyScore">0%</span>
+
+    </div>
+
+    <h3 id="riskLevel">Calculating...</h3>
+
+</div>
+
+    <div id="reportResult"></div>
+
+</div>
+<a href="history.html" class="history-link">
+    📜 Search History
+</a>
+
+    </div>
+
+
+    <div class="profile-card">
+
+        <h2>User Profile</h2>
+
+        <p><strong>Full Name:</strong> <span id="fullName">-</span></p>
+
+        <p><strong>Username:</strong> <span id="username">-</span></p>
+
+        <p><strong>Email:</strong> <span id="email">-</span></p>
+
+        <p><strong>Phone:</strong> <span id="phone">-</span></p>
+
+    </div>
+
+    <div class="chart-container">
+
+    <div class="chart-box">
+
+        <h2>📊 Search Statistics</h2>
+
+        <canvas id="searchChart"></canvas>
+
+    </div>
+
+    <div class="chart-box">
+
+        <h2>🥧 Privacy Score</h2>
+
+        <canvas id="privacyChart"></canvas>
+
+    </div>
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>

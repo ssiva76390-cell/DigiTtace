@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Search History</title>
+
+<link rel="stylesheet" href="../css/dashboard.css">
+<link rel="stylesheet" href="../css/history.css">
+
+</head>
+
+<body>
+
+<div class="history-container">
+
+<h1>📜 Search History</h1>
+
+<div class="history-top">
+
+<input
+type="text"
+id="searchBox"
+placeholder="Search...">
+
+<button id="clearBtn">
+🧹 Clear All
+</button>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Type</th>
+<th>Search</th>
+<th>Date</th>
+<th>Action</th>
+
+</tr>
+
+</thead>
+
+<tbody id="historyTable">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script src="../js/history.js"></script>
+
+</body>
+
+</html>
